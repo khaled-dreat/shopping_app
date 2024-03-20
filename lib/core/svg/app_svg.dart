@@ -15,8 +15,8 @@ class AppSvg {
   );
   static final SvgPicture arrow = SvgPicture.asset(
     AppIcons.arrow,
-    width: xlg.w,
-    height: xlg.w,
+    width: AppDime.lg.w,
+    height: AppDime.lg.h,
   );
 
   static final SvgPicture category = SvgPicture.asset(
