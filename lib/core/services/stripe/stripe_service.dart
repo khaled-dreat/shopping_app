@@ -14,14 +14,14 @@ class StripeService {
   }
 
   Future initPaymentSheet({required String paymentIntentClientSecret}) async {
-    stripe.Stripe.instance.initPaymentSheet(
+    await stripe.Stripe.instance.initPaymentSheet(
         paymentSheetParameters: stripe.SetupPaymentSheetParameters(
             paymentIntentClientSecret: paymentIntentClientSecret,
             merchantDisplayName: StripeKey.merchantDisplayName));
   }
 
   Future displayPaymentSheet() async {
-    stripe.Stripe.instance.presentPaymentSheet();
+    await stripe.Stripe.instance.presentPaymentSheet();
   }
 
   Future mackPayment(
