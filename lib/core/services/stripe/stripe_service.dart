@@ -7,7 +7,7 @@ class StripeService {
     var response = await apiService.post(
         body: paymentIntentInputModel.toJson(),
         contentType: Headers.formUrlEncodedContentType,
-        url: ApiKey.creatpayment,
+        url: ApiKey.urlBulder(ApiKey.paymentIntents),
         token: StripeKey.secretKey);
     var paymentIntentModel = PaymentIntentModel.fromJson(response.data);
     return paymentIntentModel;
@@ -18,6 +18,22 @@ class StripeService {
         paymentSheetParameters: stripe.SetupPaymentSheetParameters(
             paymentIntentClientSecret: paymentIntentClientSecret,
             merchantDisplayName: StripeKey.merchantDisplayName));
+  }
+
+  Future<EphemeralKeyModel> creatEphemeralKey(
+      {required String customerID}) async {
+    var response = await apiService.post(
+        body: {"customer": customerID},
+        url: ApiKey.urlBulder(ApiKey.ephemeralKeys),
+        contentType: Headers.formUrlEncodedContentType,
+        token: StripeKey.secretKey,
+        headers: {
+          'Authorization': "Bearer ${StripeKey.secretKey}",
+          "Stripe-Version": "2023-10-16"
+        });
+
+    var ephermeralKey = EphemeralKeyModel.fromJson(response.data);
+    return ephermeralKey;
   }
 
   Future displayPaymentSheet() async {
