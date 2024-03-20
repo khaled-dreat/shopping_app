@@ -1,4 +1,4 @@
-part of '../import/app_import.dart';
+part of '../../import/app_import.dart';
 
 class StripeKey {
   static const String secretKey =
