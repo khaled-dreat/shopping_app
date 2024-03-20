@@ -2,9 +2,10 @@ part of '../../import/app_import.dart';
 
 class AppSnackBar {
   // ✅
-  static void snackBarSuccess({required String msg}) {
+  static void snackBarSuccess(
+      {required String msg, required BuildContext context}) {
     showTopSnackBar(
-      OverlayState(),
+      Overlay.of(context),
       CustomSnackBar.success(
         message: msg,
         backgroundColor: AppColors.lightModeSnack,
@@ -21,9 +22,10 @@ class AppSnackBar {
   }
 
   // * ❌
-  static void snackBarError({required String msg}) {
+  static void snackBarError(
+      {required String msg, required BuildContext context}) {
     showTopSnackBar(
-      OverlayState(),
+      Overlay.of(context),
       CustomSnackBar.error(message: msg),
       displayDuration: const Duration(seconds: 1),
     );
