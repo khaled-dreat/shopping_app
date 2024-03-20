@@ -15,6 +15,7 @@ import 'package:top_snackbar_flutter/top_snack_bar.dart';
 import '../../features/checkout/data/model/m_payment_intent/m_payment_intent.dart';
 import '../theme/app_color.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 //  ************************ AS & SHOW **************************
 import 'package:flutter_stripe/flutter_stripe.dart' as stripe;
@@ -45,6 +46,7 @@ part '../services/stripe_key.dart';
 part '../errors/app_failure.dart';
 part '../widgets/snackbar/snackbar.dart';
 part '../simple_bloc_observer/simple_bloc_observer.dart';
+part '../widgets/toast/app_toast.dart';
 
 // ?  ************************ features **************************
 //  ************************ Checkout **************************
