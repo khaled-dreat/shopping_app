@@ -18,15 +18,13 @@ class CardInfoWidget extends StatelessWidget {
       ),
       child: Row(
         children: [
-          SvgPicture.asset('assets/images/master_card.svg'),
-          const SizedBox(
-            width: 23,
-          ),
+          SvgPicture.asset(AppImages.masterCard),
+          30.horizontalSpace,
           Text.rich(
             TextSpan(
               children: [
                 const TextSpan(
-                  text: 'Credit Card ',
+                  text: 'Credit Card \n',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 18,
