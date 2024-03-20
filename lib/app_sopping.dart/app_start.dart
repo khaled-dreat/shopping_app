@@ -12,7 +12,7 @@ class AppStart extends StatelessWidget {
         // * Theme
         theme: AppThemeChoose.light(context),
         darkTheme: AppThemeChoose.dark(context),
-        themeMode: ThemeMode.dark,
+        themeMode: ThemeMode.light,
         // * Route
         routes: AppRoute.routes,
         initialRoute: AppRoute.inteRoute,

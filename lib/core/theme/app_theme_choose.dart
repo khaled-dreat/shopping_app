@@ -12,8 +12,6 @@ class AppThemeChoose {
   // * Light
   static ThemeData light(BuildContext context) {
     return ThemeData.light().copyWith(
-      // * scaffold Background Color
-      scaffoldBackgroundColor: AppColors.primaryColor,
       // * appBar Theme
       appBarTheme: AppBarTheme(
         backgroundColor: AppColors.bgWhite,
