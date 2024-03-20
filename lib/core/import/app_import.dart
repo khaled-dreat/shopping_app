@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -12,6 +14,7 @@ import 'package:dio/dio.dart';
 import 'package:shopping_app/features/checkout/data/model/payment_intent_input_models.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
 import 'package:top_snackbar_flutter/top_snack_bar.dart';
+import '../../features/checkout/data/model/ephemeral_key_model/associated_object.dart';
 import '../../features/checkout/data/model/m_payment_intent/m_payment_intent.dart';
 import '../theme/app_color.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -72,6 +75,7 @@ part "../../features/checkout/presentation/view/thank_you/widgets/payment_info_i
 part "../../features/checkout/presentation/view/thank_you/widgets/card_info_widget.dart";
 part "../../features/checkout/presentation/view/thank_you/widgets/custom_dashed_line.dart";
 part "../../features/checkout/presentation/view/thank_you/widgets/custom_check_icon.dart";
+part "../../features/checkout/data/model/ephemeral_key_model/ephemeral_key_model.dart";
 //  ************************ View **************************
 part '../../features/home/body.dart';
 part '../../features/home/prodects.dart';
