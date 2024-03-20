@@ -1,4 +1,4 @@
-part of './import/app_import.dart';
+part of '../import/app_import.dart';
 
 class AppDime {
   static double base = 2;

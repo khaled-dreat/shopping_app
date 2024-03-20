@@ -37,7 +37,7 @@ part '../theme/app_theme.dart';
 part "../widgets/appbar/custom_appbar.dart";
 part '../constant/app_icons.dart';
 part '../svg/app_svg.dart';
-part '../app_dime.dart';
+part '../dime/app_dime.dart';
 part '../widgets/buttons/custom_btn.dart';
 part '../api/api_services.dart';
 part '../services/stripe_service.dart';
