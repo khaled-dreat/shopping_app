@@ -11,11 +11,11 @@ class PaymentItemInfo extends StatelessWidget {
         Text(
           title,
           textAlign: TextAlign.center,
-          style: AppTheme.h6(context),
+          style: AppTheme.b1(context),
         ),
         Text(
           value,
-          style: AppTheme.h6(context),
+          style: AppTheme.b1(context),
         )
       ],
     );

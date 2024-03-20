@@ -27,7 +27,7 @@ class ThankYouCard extends StatelessWidget {
             Text(
               'Your transaction was successful',
               textAlign: TextAlign.center,
-              style: AppTheme.h4(context),
+              style: AppTheme.h6(context),
             ),
             const SizedBox(
               height: 42,
