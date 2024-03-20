@@ -10,7 +10,7 @@ class AppRoute {
   };
 
   // * Inte Route
-  static String inteRoute = PaymentDetailsView.nameRoute;
+  static String inteRoute = MyCartView.nameRoute;
 
   // * push Name
   static void go(BuildContext context, String nameRoute) =>
