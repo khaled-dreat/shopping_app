@@ -6,6 +6,7 @@ class StripeService {
       PaymentIntentInputModel paymentIntentInputModel) async {
     var response = await apiService.post(
         body: paymentIntentInputModel.toJson(),
+        contentType: Headers.formUrlEncodedContentType,
         url: ApiKey.creatpayment,
         token: StripeKey.secretKey);
     var paymentIntentModel = PaymentIntentModel.fromJson(response.data);
