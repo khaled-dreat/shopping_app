@@ -31,9 +31,9 @@ class _PaymentMethodsBottomSheetState extends State<PaymentMethodsBottomSheet> {
           const SizedBox(
             height: 16,
           ),
-          //  PaymentMethodsListView(
-          //    updatePaymentMethod: updatePaymentMethod,
-          //  ),
+          PaymentMethodsListView(
+              // updatePaymentMethod: updatePaymentMethod,
+              ),
           const SizedBox(
             height: 32,
           ),

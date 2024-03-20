@@ -1,9 +1,9 @@
 part of '../../../../../../core/import/app_import.dart';
 
 class PaymentMethodsListView extends StatefulWidget {
-  const PaymentMethodsListView({super.key, required this.updatePaymentMethod});
+  const PaymentMethodsListView({super.key});
 
-  final Function({required int index}) updatePaymentMethod;
+  //final Function({required int index}) updatePaymentMethod;
   @override
   State<PaymentMethodsListView> createState() => _PaymentMethodsListViewState();
 }
@@ -28,8 +28,8 @@ class _PaymentMethodsListViewState extends State<PaymentMethodsListView> {
               child: GestureDetector(
                 onTap: () {
                   activeIndex = index;
-                  setState(() {});
-                  widget.updatePaymentMethod(index: activeIndex);
+                  // setState(() {});
+                  // widget.updatePaymentMethod(index: activeIndex);
                 },
                 child: PaymentMethodItem(
                   isActive: activeIndex == index,
