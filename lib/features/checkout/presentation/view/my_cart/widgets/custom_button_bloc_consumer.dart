@@ -11,6 +11,7 @@ class CustomButtonBlocConsumer extends StatelessWidget {
           AppRoute.goReplace(context, ThankYouView.nameRoute);
         }
         if (state is PaymentFailure) {
+          Navigator.pop(context);
           AppSnackBar.snackBarError(msg: state.errMessage);
         }
       },
