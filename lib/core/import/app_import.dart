@@ -76,6 +76,7 @@ part "../../features/checkout/presentation/view/thank_you/widgets/card_info_widg
 part "../../features/checkout/presentation/view/thank_you/widgets/custom_dashed_line.dart";
 part "../../features/checkout/presentation/view/thank_you/widgets/custom_check_icon.dart";
 part "../../features/checkout/data/model/ephemeral_key_model/ephemeral_key_model.dart";
+part '../../features/checkout/data/model/init_payment_sheet_input_model.dart';
 //  ************************ View **************************
 part '../../features/home/body.dart';
 part '../../features/home/prodects.dart';
