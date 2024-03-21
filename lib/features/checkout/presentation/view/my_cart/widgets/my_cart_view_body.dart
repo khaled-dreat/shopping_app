@@ -9,58 +9,24 @@ class MyCartViewBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         children: [
-          const SizedBox(
-            height: 18,
-          ),
+          // * Space
+          18.verticalSpace,
+          // * Prudact Image
           Expanded(child: Image.asset(AppImages.basketImage)),
-          const SizedBox(
-            height: 25,
-          ),
-          const OrderInfoItem(
-            title: 'Order Subtotal',
-            value: r'42.97$',
-          ),
-          const SizedBox(
-            height: 3,
-          ),
-          const OrderInfoItem(
-            title: 'Discount',
-            value: r'0$',
-          ),
-          const SizedBox(
-            height: 3,
-          ),
-          const OrderInfoItem(
-            title: 'Shipping',
-            value: r'8$',
-          ),
-          const Divider(
-            thickness: 2,
-            height: 34,
-            color: Color(0xffC7C7C7),
-          ),
-          const TotalPrice(title: 'Total', value: r'$50.97'),
-          const SizedBox(
-            height: 16,
-          ),
+          // * Space
+          25.verticalSpace,
+          const CustomMyCardPricing(),
+          // * Space
+          16.verticalSpace,
+          // * Custom Button
           CustomButton(
             text: 'Complete Payment',
             onTap: () {
-              showModalBottomSheet(
-                  context: context,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16)),
-                  builder: (context) {
-                    return BlocProvider(
-                      create: (context) => PaymentCubit(CheckoutRepoImpl()),
-                      child: const PaymentMethodsBottomSheet(),
-                    );
-                  });
+              customBottomSheetCompletePayment(context);
             },
           ),
-          const SizedBox(
-            height: 12,
-          ),
+          // * Space
+          12.verticalSpace,
         ],
       ),
     );
