@@ -1,4 +1,4 @@
-part of "../../../../core/import/app_import.dart";
+part of "../../../../../../core/import/app_import.dart";
 
 class PopularProdacts extends StatelessWidget {
   const PopularProdacts({super.key});
