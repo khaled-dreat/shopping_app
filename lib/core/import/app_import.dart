@@ -79,13 +79,18 @@ part "../../features/checkout/data/model/ephemeral_key_model/ephemeral_key_model
 part '../../features/checkout/data/model/init_payment_sheet_input_model.dart';
 part "../../features/checkout/presentation/view/my_cart/widgets/custom_bottom_sheet_complete_payment.dart";
 part "../../features/checkout/presentation/view/my_cart/widgets/custom_my_card_pricing.dart";
+
+//  ************************ Home **************************
+part '../../features/home/presentation/pages/body.dart';
+part '../../features/home/presentation/pages/prodects.dart';
+part "../../features/home/presentation/pages/prodact_card_design.dart";
+part "../../features/home/presentation/pages/popular_prodact.dart";
+part '../../features/home/presentation/pages/popular_prodact_card_design.dart';
+part "../../features/home/presentation/pages/top_rated_products.dart";
+part "../../features/home/presentation/cubit/home_cubit.dart";
+part '../../features/home/presentation/cubit/home_state.dart';
+
 //  ************************ View **************************
-part '../../features/home/body.dart';
-part '../../features/home/prodects.dart';
-part "../../features/home/prodact_card_design.dart";
-part "../../features/home/popular_prodact.dart";
-part '../../features/home/popular_prodact_card_design.dart';
-part "../../features/home/top_rated_products.dart";
 
 //  ************************ Products Details **************************
 part "../../features/product_details/body.dart";
