@@ -81,7 +81,7 @@ part "../../features/checkout/presentation/view/my_cart/widgets/custom_bottom_sh
 part "../../features/checkout/presentation/view/my_cart/widgets/custom_my_card_pricing.dart";
 
 //  ************************ Home **************************
-part "../../features/home/presentation/view/home_view.dart";
+part "../../features/home/presentation/view/home/home_view.dart";
 part "../../features/home/presentation/view/home/widgets/popular_prodact_card_design.dart";
 part "../../features/home/presentation/view/home/widgets/prodects.dart";
 part '../../features/home/presentation/view/home/widgets/prodact_card_design.dart';
@@ -89,6 +89,7 @@ part "../../features/home/presentation/view/home/widgets/popular_prodact.dart";
 part '../../features/home/presentation/view/home/widgets/top_rated_products.dart';
 part "../../features/home/presentation/maneag/home_cubit.dart";
 part '../../features/home/presentation/maneag/home_state.dart';
+part "../../features/home/presentation/view/home/widgets/custom_home_bottom_nav_bar.dart";
 
 //  ************************ View **************************
 

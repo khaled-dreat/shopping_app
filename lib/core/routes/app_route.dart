@@ -4,6 +4,7 @@ class AppRoute {
   // * Pages App
   static Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
     LoginPage.nameRoute: (context) => const LoginPage(),
+    HomeView.nameRoute: (context) => const HomeView(),
     MyCartView.nameRoute: (context) => const MyCartView(),
     PaymentDetailsView.nameRoute: (context) => const PaymentDetailsView(),
     ThankYouView.nameRoute: (context) => const ThankYouView(),
